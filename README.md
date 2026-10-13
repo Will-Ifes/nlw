@@ -4,14 +4,17 @@ Aplicação de estudo para cadastrar hábitos, definir dias da semana e acompanh
 
 **React · TypeScript · Tailwind CSS · Fastify · Prisma · SQLite**
 
-## Funcionalidades presentes
+## Destaques
 
 - Cadastro de hábitos com dias da semana.
 - Consulta dos hábitos possíveis e concluídos em uma data.
 - Marcação e desmarcação de conclusão.
 - Resumo diário para visualização de progresso.
 
-## Organização e arquitetura
+<details>
+<summary><strong>Organização e código</strong></summary>
+
+### Organização e arquitetura
 
 | Pasta | Responsabilidade |
 | --- | --- |
@@ -21,7 +24,12 @@ Aplicação de estudo para cadastrar hábitos, definir dias da semana e acompanh
 
 Os registros relacionam hábito e dia. A combinação é única, permitindo alternar a conclusão sem criar duas marcações para a mesma data.
 
-## Executar localmente
+</details>
+
+<details>
+<summary><strong>Executar e consultar</strong></summary>
+
+### Executar localmente
 
 Requer Node.js, npm e configuração do banco SQLite.
 
@@ -52,7 +60,7 @@ npm run dev
 
 Confira o endereço da API em `setup/aulas/web/src/lib/axios.ts` e abra o endereço indicado pelo Vite.
 
-## Rotas para explorar
+### Rotas para explorar
 
 | Método | Rota | Função |
 | --- | --- | --- |
@@ -61,9 +69,14 @@ Confira o endereço da API em `setup/aulas/web/src/lib/axios.ts` e abra o endere
 | PATCH | `/habits/:id/toggle` | Alternar conclusão no dia atual |
 | GET | `/summary` | Resumo de progresso |
 
-## Escopo e evolução
+</details>
+
+<details>
+<summary>Escopo e referências</summary>
 
 Projeto educacional sem autenticação, isolamento entre usuários ou suíte automatizada de testes versionada. Datas, tratamento de falhas e regras de recorrência são bons pontos para aprofundar antes de uso real.
+
+</details>
 
 ---
 
