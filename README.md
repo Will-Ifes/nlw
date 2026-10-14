@@ -1,8 +1,19 @@
+<p align="center">
+  <img src="./.github/readme-cover.svg" alt="Habits: Recorrência semanal e conclusões por dia." width="100%" />
+</p>
+
 # Habits · acompanhamento de hábitos
 
 Aplicação de estudo para cadastrar hábitos, definir dias da semana e acompanhar conclusões diárias. Desenvolvida no contexto do NLW da Rocketseat.
 
 **React · TypeScript · Tailwind CSS · Fastify · Prisma · SQLite**
+
+## Explore o diferencial
+
+| Ponto de entrada | O que observar |
+| --- | --- |
+| [Regra de recorrência](setup/aulas/server/src/routes.ts) | As rotas selecionam os hábitos de uma data e alternam sua conclusão. |
+| [Modelagem do hábito](setup/aulas/server/prisma/schema.prisma) | O schema relaciona recorrência, dias e marcações de conclusão. |
 
 ## Destaques
 
